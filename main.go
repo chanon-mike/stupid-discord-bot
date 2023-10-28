@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/chanon-mike/reolym-discord-bot/discord"
+	"github.com/chanon-mike/stupid-discord-bot/discord"
 )
 
 func main() {

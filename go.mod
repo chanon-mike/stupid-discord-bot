@@ -1,4 +1,4 @@
-module github.com/chanon-mike/reolym-discord-bot
+module github.com/chanon-mike/stupid-discord-bot
 
 go 1.21.1
 

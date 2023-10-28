@@ -7,8 +7,8 @@ import (
 	"syscall"
 
 	"github.com/bwmarrin/discordgo"
-	"github.com/chanon-mike/reolym-discord-bot/config"
-	"github.com/chanon-mike/reolym-discord-bot/handler"
+	"github.com/chanon-mike/stupid-discord-bot/config"
+	"github.com/chanon-mike/stupid-discord-bot/handler"
 )
 
 // Start a discord bot
