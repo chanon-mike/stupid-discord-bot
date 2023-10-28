@@ -3,6 +3,7 @@ module github.com/chanon-mike/stupid-discord-bot
 go 1.21.1
 
 require (
+	github.com/aws/aws-lambda-go v1.41.0
 	github.com/bwmarrin/discordgo v0.27.1
 	github.com/joho/godotenv v1.5.1
 )
