@@ -21,7 +21,7 @@ func Start() {
 		log.Fatal("Error initialize discord bot")
 	}
 
-	addEventHandlers(discord)
+	handler.AddEventHandlers(discord)
 
 	// Open a websocket connection to Discord and begin listening.
 	err = discord.Open()
@@ -36,9 +36,4 @@ func Start() {
 	signal.Notify(c, syscall.SIGINT, syscall.SIGTERM, os.Interrupt)
 	<-c
 	log.Println("Gracefully shutdown...")
-}
-
-// Add all event handlers
-func addEventHandlers(s *discordgo.Session) {
-	s.AddHandler(handler.OnMessageCreateHandler)
 }
