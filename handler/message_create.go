@@ -1,6 +1,7 @@
 package handler
 
 import (
+	"log"
 	"regexp"
 
 	"github.com/bwmarrin/discordgo"
@@ -17,5 +18,6 @@ func OnMessageCreateHandler(s *discordgo.Session, msg *discordgo.MessageCreate) 
 	// If เป็น or เปง or เปน
 	case regexp.MustCompile(`เป[็นง]`).MatchString(msg.Content):
 		s.ChannelMessageSend(msg.ChannelID, "เป็นตาธรรม")
+		log.Printf("Received message from %s (%s): %s\n", msg.Author.Username, msg.Author.ID, msg.Content)
 	}
 }
